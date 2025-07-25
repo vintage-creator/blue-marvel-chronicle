@@ -101,7 +101,7 @@ export default function CompanySummaries() {
             <div className="p-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-primary mb-2">£{totalInvestment.toLocaleString()}</div>
+                  <div className="text-3xl font-bold text-primary mb-2">£500,000</div>
                   <div className="text-muted-foreground">Total Investment</div>
                 </div>
                 <div>

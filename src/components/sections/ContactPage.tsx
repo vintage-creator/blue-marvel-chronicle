@@ -10,9 +10,7 @@ import blueMarvelLogo from '@/assets/blue-marvel-group-logo.png';
 import bmcsLogo from '@/assets/bmcs-logo.png';
 
 const contactInfo = [
-  { type: 'phone', value: '+44 7389 761888', icon: Phone },
-  { type: 'phone', value: '+44 7368 592244', icon: Phone },
-  { type: 'phone', value: '+44 7397 141816', icon: Phone }
+  { type: 'phone', value: '+44 7389 761888', icon: Phone }
 ];
 
 const companies = [
@@ -89,7 +87,7 @@ export default function ContactPage() {
             className="h-24 mx-auto mb-6 animate-float"
           />
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Contact Blue Marvel Group
+            Contact Us
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -97,32 +95,6 @@ export default function ContactPage() {
           </p>
         </motion.div>
 
-        {/* Investment Summary */}
-        <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          <Card className="mb-12 bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
-            <div className="p-8">
-              <h2 className="text-3xl font-bold text-primary mb-6 text-center">Investment Summary</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div>
-                  <div className="text-4xl font-bold text-primary mb-2">£{totalInvestment.toLocaleString()}</div>
-                  <div className="text-muted-foreground">Total Investment Opportunity</div>
-                </div>
-                <div>
-                  <div className="text-4xl font-bold text-accent-foreground mb-2">{totalEquity}%</div>
-                  <div className="text-muted-foreground">Total Equity Available</div>
-                </div>
-                <div>
-                  <div className="text-4xl font-bold text-green-600 mb-2">4</div>
-                  <div className="text-muted-foreground">Investment Opportunities</div>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </motion.div>
 
         {/* Contact Information */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">

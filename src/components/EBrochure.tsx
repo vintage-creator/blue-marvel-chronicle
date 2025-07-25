@@ -73,9 +73,11 @@ export default function EBrochure() {
         await new Promise(resolve => setTimeout(resolve, 500)); // Wait for render
 
         const canvas = await html2canvas(brochureRef.current, {
-          scale: 2,
+          scale: 1,
           useCORS: true,
           allowTaint: true,
+          logging: false,
+          backgroundColor: '#ffffff',
         });
 
         const imgData = canvas.toDataURL('image/png');
@@ -110,9 +112,6 @@ export default function EBrochure() {
             >
               {isMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
             </Button>
-            <h1 className="text-lg font-semibold hidden md:block">
-              Blue Marvel Group Investment Brochure
-            </h1>
           </div>
 
           <div className="flex items-center space-x-2">

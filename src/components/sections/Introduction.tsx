@@ -43,11 +43,8 @@ export default function Introduction() {
           <img 
             src={blueMarvelLogo} 
             alt="Blue Marvel Group" 
-            className="h-20 mx-auto mb-6 animate-float"
+            className="h-20 mx-auto mb-8 animate-float"
           />
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Blue Marvel Group
-          </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Empowering businesses and individuals through innovative solutions across 

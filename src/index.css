@@ -121,3 +121,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Hide Lovable badge */
+[class*="lovable"] {
+  display: none !important;
+}
